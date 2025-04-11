@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: "JetBrains Mono";
 }
 ol, ul {
 	list-style: none;
@@ -43,14 +45,51 @@ table {
 }
 .tela-login{
     display: flex;
-    width: 1200px;
-    height: 730px;
-    margin: 30px;
+    align-items: center;
+    justify-content: center;   
+    height: 100vh;
+	
 }
-.fundo-entrar{
-    
-    border-top-left-radius: 40px;
+.fundo-login{
+	display: flex;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+	border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
-    background: linear-gradient(to bottom,#2F89FC,#3F5978)
+	border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px
     
+}
+
+.fundo-entrar{
+    background: linear-gradient(to bottom,#2F89FC,#3F5978);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px
+    
+}
+.menu-entrar{
+	width: 500px;
+}
+.logo{
+	margin-top: 15px;
+	margin-left: 100px;
+	align-items: center;
+
+}
+.titulo-entrar{
+	font-size: 36px;
+	font-weight:bold ;
+	color: #ffffff;
+	margin-top: 9px;
+	text-align: center;
+}
+.subtitulo-entrar{
+	font-size: 24px;
+	font-weight: bold;
+	color: #ffffff;
+	margin-top: 28px;
+	width: 231px;
+	align-items: center;
+}
+.botao-entrar{
+	border-radius: 50px;
 }
