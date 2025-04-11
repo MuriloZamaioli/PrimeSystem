@@ -41,3 +41,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.tela-login{
+    display: flex;
+    width: 1200px;
+    height: 730px;
+    margin: 30px;
+}
+.fundo-entrar{
+    
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background: linear-gradient(to bottom,#2F89FC,#3F5978)
+    
+}
