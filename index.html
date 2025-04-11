@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime System</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="tela-login">
+        <div class="fundo-entrar">
+            <div class="menu-entrar">
+                <img src="imagens/logo.png" alt="logo" class="logo">
+                <h1 class="titulo-entrar">Bem-Vindo(a)</h1>
+                <h2 class="subtitulo-entrar">Acesse sua conta agora mesmo.</h2>
+                <button class="botao-entrar">ENTRAR</button>
+                <a href="#" class="esqueci-senha">Esqueci minha senha</a>
+            </div>
+        </div>
+        <div class="fundo-cadstrar">
+            <div class="menu-cadastrar">
+                <h1 class="titulo-cadastrar">Crie sua conta</h1>
+                <h2 class="subtitulo-cadastrar">Preencha seus dados</h2>
+                <form action="/login" method="POST">
+                    <div class="campo-cadastro">
+                        <img src="imagens/icone-nome.png" alt="Usuario" class="icone-cadastro">
+                        <input type="text" id="usuario" name="usuario" placeholder="Nome" required>
+                    </div>
+                    <div class="campo-cadastro">
+                        <img src="imagens/icone-email.png" alt="Email" class="icone-cadastro">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="campo-cadastro">
+                        <img src="imagens/icone-senha.png" alt="Senha" class="icone-cadastro">
+                        <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
