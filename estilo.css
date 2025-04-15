@@ -68,28 +68,56 @@ table {
 }
 .menu-entrar{
 	width: 500px;
+	align-items: center;
+	
 }
+
 .logo{
 	margin-top: 15px;
 	margin-left: 100px;
-	align-items: center;
 
 }
+
+.descricao-entrar{
+	color: #ffffff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .titulo-entrar{
 	font-size: 36px;
 	font-weight:bold ;
-	color: #ffffff;
 	margin-top: 9px;
-	text-align: center;
+	
 }
 .subtitulo-entrar{
 	font-size: 24px;
-	font-weight: bold;
-	color: #ffffff;
+	font-weight: 700;
 	margin-top: 28px;
-	width: 231px;
-	align-items: center;
+	
 }
 .botao-entrar{
+	margin-top: 98px;
 	border-radius: 50px;
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 20px;
+	border: 4px solid #FFFFFF;
+	width: 270PX;
+	height: 60PX;
+	background-color: transparent;
+	align-items: center;
+	
 }
+
+.esqueci-senha{
+	margin-top: 15px;
+	text-decoration: none;
+	color: #ffffff;
+	padding-bottom: 105px;
+
+}
+
+.
