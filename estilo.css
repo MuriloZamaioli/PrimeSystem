@@ -1,17 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -19,66 +88,91 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 	font-family: "JetBrains Mono";
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.tela-login{
-    display: flex;
-    align-items: center;
-    justify-content: center;   
-    height: 100vh;
-	
+::placeholder{
+	font-family: "JetBrains Mono";
+	font-weight: 500;
 }
-.fundo-login{
+
+
+.tela-login {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+
+}
+
+.fundo-login {
 	display: flex;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 	border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
+	border-bottom-left-radius: 40px;
 	border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px
-    
+	border-bottom-right-radius: 40px
 }
 
-.fundo-entrar{
-    background: linear-gradient(to bottom,#2F89FC,#3F5978);
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px
-    
+.fundo-entrar {
+	background: linear-gradient(to bottom, #2F89FC, #3F5978);
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px
 }
-.menu-entrar{
+
+.menu-entrar {
 	width: 500px;
 	align-items: center;
-	
+
 }
 
-.logo{
+.logo {
 	margin-top: 15px;
 	margin-left: 100px;
 
 }
 
-.descricao-entrar{
+.descricao-entrar {
 	color: #ffffff;
 	text-align: center;
 	display: flex;
@@ -86,19 +180,21 @@ table {
 	align-items: center;
 }
 
-.titulo-entrar{
+.titulo-entrar {
 	font-size: 36px;
-	font-weight:bold ;
+	font-weight: bold;
 	margin-top: 9px;
-	
+
 }
-.subtitulo-entrar{
+
+.subtitulo-entrar {
 	font-size: 24px;
 	font-weight: 700;
 	margin-top: 28px;
-	
+
 }
-.botao-entrar{
+
+.botao-entrar {
 	margin-top: 98px;
 	border-radius: 50px;
 	font-weight: 700;
@@ -109,10 +205,19 @@ table {
 	height: 60PX;
 	background-color: transparent;
 	align-items: center;
-	
+
 }
 
-.esqueci-senha{
+.botao-entrar:hover {
+	background: linear-gradient(135deg, #3a8dde, #6fb1fc);
+	transform: scale(1.05);
+	box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+	color: #fff;
+	border-color: #fff;
+	cursor: pointer;
+}
+
+.esqueci-senha {
 	margin-top: 15px;
 	text-decoration: none;
 	color: #ffffff;
@@ -120,4 +225,78 @@ table {
 
 }
 
-.
+.menu-cadastrar {
+	width: 700px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.titulo-cadastrar {
+	margin-top: 86px;
+	font-weight: 700;
+	font-size: 36px;
+	background: linear-gradient(90deg, #2F89FC 0%, #3F5978 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: center;
+
+}
+
+.subtitulo-cadastrar {
+	margin-top: 15px;
+	text-align: center;
+	color: #AEAEAE;
+	font-size: 15px;
+	font-weight: 700;
+	padding-bottom: 45px;
+}
+
+.campo-cadastro {
+	background-color: #F1F1F1;
+	margin-bottom: 30px;
+	height: 70px;
+	width: 450px;
+	align-items: center;
+	display: flex;
+	text-align: center;
+	padding: 0 15px;
+}
+
+.texto-cadastro {
+	margin-left: 18px;
+	background-color: transparent;
+	border: 0;
+	font-size: 20px;
+	outline: none;
+}
+
+.form-cadastro {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.botao-cadastrar {
+	margin-top: 22px;
+	border-radius: 50px;
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 20px;
+	border: 0;
+	width: 270PX;
+	height: 60PX;
+	background: linear-gradient(90deg, #2F89FC 0%, #3F5978 100%);
+
+}
+
+.botao-cadastrar:hover {
+	background: linear-gradient(135deg, #3a8dde, #6fb1fc);
+	transform: scale(1.05);
+	box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+	color: #fff;
+	border-color: #fff;
+	cursor: pointer;
+}

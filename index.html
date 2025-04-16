@@ -17,7 +17,7 @@
                     <div class="descricao-entrar">
                         <h1 class="titulo-entrar">Bem-Vindo(a)</h1>
                         <h1 class="subtitulo-entrar">Acesse sua conta <br> agora mesmo.</h1>
-                        <button class="botao-entrar">ENTRAR</button>
+                        <button type="button" class="botao-entrar">ENTRAR</button>
                         <a href="#" class="esqueci-senha">Esqueci minha senha</a>
                     </div>
                 </div>
@@ -26,21 +26,22 @@
                 <div class="menu-cadastrar">
                     <h1 class="titulo-cadastrar">Crie sua conta</h1>
                     <h2 class="subtitulo-cadastrar">Preencha seus dados</h2>
-                    <form action="/login" method="POST">
+                    <form action="/login" method="POST" class="form-cadastro">
                         <div class="campo-cadastro">
                             <img src="imagens/icone-nome.png" alt="Usuario" class="icone-cadastro">
-                            <input type="text" id="usuario" name="usuario" placeholder="Nome" required>
+                            <input type="text" id="usuario" name="usuario" placeholder="Nome" class="texto-cadastro" required>
                         </div>
                         <div class="campo-cadastro">
                             <img src="imagens/icone-email.png" alt="Email" class="icone-cadastro">
-                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <input type="email" id="email" name="email" placeholder="Email" class="texto-cadastro" required>
                         </div>
                         <div class="campo-cadastro">
                             <img src="imagens/icone-senha.png" alt="Senha" class="icone-cadastro">
-                            <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                            <input type="password" id="senha" name="senha" placeholder="Senha" class="texto-cadastro" required>
                         </div>
-                        <button type="submit">Cadastrar</button>
+                        
                     </form>
+                    <button type="submit" class="botao-cadastrar">Cadastrar</button>
                 </div>
             </div>
         </div>
