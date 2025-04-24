@@ -107,7 +107,7 @@ section {
 body {
 	line-height: 1;
 	font-family: "JetBrains Mono";
-
+	background-color: #DBE7F6;
 }
 
 ol,
@@ -135,4 +135,46 @@ table {
 ::placeholder{
 	font-family: "JetBrains Mono";
 	font-weight: 500;
+}
+.cabecalho{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 8px;
+	margin-left: 75px;
+}
+
+.logo{
+	height: 250px;
+	width: 250px;
+}
+
+.conjunto-menu{
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	align-items: center;
+	gap: 70px;
+	margin-right: 111px;
+}
+
+.menu-cabecalho{
+	color: #2F89FC;
+	font-size: 32px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-left: 50px;
+}
+
+.entrar{
+	padding: 8px 36px;
+	border-radius: 40px;
+	background-color: rgba(47, 137, 252, 0.4);
+}
+
+.titulo{
+	font-size: 64px;
+	color: #116DE2;
+	font-weight: 800;
+	text-align: center;
 }

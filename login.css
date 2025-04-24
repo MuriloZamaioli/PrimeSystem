@@ -107,6 +107,7 @@ section {
 body {
 	line-height: 1;
 	font-family: "JetBrains Mono";
+	background-color: #DBE7F6;
 }
 
 ol,
@@ -155,7 +156,7 @@ table {
 }
 
 .fundo-entrar {
-	background: linear-gradient(to bottom, #2F89FC, #3F5978);
+	background: #2F89FC;
 	border-top-left-radius: 40px;
 	border-bottom-left-radius: 40px
 }
@@ -209,7 +210,6 @@ table {
 }
 
 .botao-entrar:hover {
-	background: linear-gradient(135deg, #3a8dde, #6fb1fc);
 	transform: scale(1.05);
 	box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
 	color: #fff;
@@ -224,7 +224,11 @@ table {
 	padding-bottom: 105px;
 
 }
-
+.fundo-cadastrar{
+	background-color: #ffffff;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px
+}
 .menu-cadastrar {
 	width: 700px;
 	align-items: center;
@@ -237,7 +241,7 @@ table {
 	margin-top: 86px;
 	font-weight: 700;
 	font-size: 36px;
-	background: linear-gradient(90deg, #2F89FC 0%, #3F5978 100%);
+	background: #2F89FC;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-align: center;
@@ -288,12 +292,11 @@ table {
 	border: 0;
 	width: 270PX;
 	height: 60PX;
-	background: linear-gradient(90deg, #2F89FC 0%, #3F5978 100%);
+	background: #2F89FC;
 
 }
 
 .botao-cadastrar:hover {
-	background: linear-gradient(135deg, #3a8dde, #6fb1fc);
 	transform: scale(1.05);
 	box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
 	color: #fff;
