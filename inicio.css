@@ -107,8 +107,6 @@ section {
 body {
 	line-height: 1;
 	font-family: "JetBrains Mono";
-	background-color: #DBE7F6;
-	
 }
 
 ol,
@@ -175,48 +173,56 @@ table {
 	background-color: rgba(47, 137, 252, 0.4);
 }
 
-.titulo {
+.titulo1 {
 	font-size: 64px;
 	color: #116DE2;
 	font-weight: 800;
 	text-align: center;
 }
 
+.menu-inicio {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
 .imagem-inicio {
-	margin-top: 145px;
 	height: 434px;
 }
 
-.menu-inicio {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.nuvem-texto {
+.nuvem-inicio {
 	text-align: center;
 	position: relative;
-	width: 800px;
+	width: 700px;
 	height: auto;
 	align-items: center;
 	display: flex;
-
 }
 
-.nuvem-inicio {
+.nuvem1 {
 	width: 100%;
 	display: block;
 }
 
-.texto-inicio {
-	font-size: 32px;
+.texto-nuvem-inicio {
+	font-size: 28px;
 	font-weight: 400;
 	width: 520px;
 	position: absolute;
-	top: 48%;
-	left: 50%;
+	top: 52%;
+	left: 48%;
 	transform: translate(-38%, -82%);
 	text-align: center;
+}
+
+.menu-teste{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-left: 830px;
+	margin-top: 500px;
+	position: absolute;
+	
 }
 
 .nuvem-teste{
@@ -234,10 +240,46 @@ table {
 	margin-left: 30px;
 }
 
-.nuvenzinha{
-	display: flex;
-	align-items: center;
+.titulo2{
+	font-size: 64px;
+	color: #116DE2;
+	font-weight: 800;
 	text-align: center;
-	margin-top: 917px;
+	margin-top: 100px;
+}
+
+.menu-servicos {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	
+}
+
+.nuvem-servicos{
+	
+	text-align: center;
+	position: relative;
+	width: 700px;
+	height: auto;
+	align-items: center;
+	display: flex;
+}
+
+.nuvem2 {
+	width: 83%;
+	height: auto;
+	display: block;
+}
+
+.texto-nuvem-servicos {
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 28px;
+}
+
+.imagem-servico {
+	height: 434px;
 }
