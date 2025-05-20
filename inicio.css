@@ -283,3 +283,88 @@ table {
 .imagem-servico {
 	height: 434px;
 }
+
+.titulo3 {
+	font-size: 64px;
+	color: #116DE2;
+	font-weight: 800;
+	text-align: center;
+	margin-top: 97px;
+}
+
+.imagem-sobrenos{
+	margin-top: 67px;
+}
+
+.menu-sobrenos1 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.nuvem-sobrenos1{
+	text-align: center;
+	position: relative;
+	width: 700px;
+	height: auto;
+	align-items: center;
+	display: flex;
+}
+
+.nuvem3 {
+	width: 100%;
+	display: block;
+}
+
+.texto-nuvem-sobrenos1{
+	font-size: 28px;
+	font-weight: 400;
+	width: 520px;
+	position: absolute;
+	top: 52%;
+	left: 48%;
+	transform: translate(-48%, -75%);
+	text-align: center;
+}
+
+
+.menu-sobrenos2 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+
+.nuvem-sobrenos2{
+	text-align: center;
+	position: relative;
+	width: 700px;
+	height: auto;
+	align-items: center;
+	display: flex;
+}
+
+.nuvem4 {
+	width: 83%;
+	height: auto;
+	display: block;
+}
+
+.texto-nuvem-sobrenos2 {
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 28px;
+}
+
+.titulo4 {
+	font-size: 64px;
+	color: #116DE2;
+	font-weight: 800;
+	text-align: center;
+}
+
+.subtitulo{
+	
+}
