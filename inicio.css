@@ -405,9 +405,12 @@ table {
 }
 
 .texto-cadastro{
-	padding: 20px 135px;
+	padding: 10px 30px 10px 10px;
 	border: none;
 	background-color: #2F89FC;
+	font-size: 24px;
+	color: #ffffff;
+	text-align: left;
 }
 
 .campo-botao{
@@ -440,6 +443,7 @@ table {
 	text-align: center;
 	gap: 300px;
 	margin-top: 50px;
+	margin-bottom: 170px;
 }
 
 .botao-whats{
@@ -462,4 +466,48 @@ table {
 	border-radius: 40px;
 	background-color: #2F89FC;
 	width: 175px;
+}
+
+.pre-rodape{
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu-rodape{
+	width: 700px;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+	gap: 70px;
+	
+}
+
+.campo-rodape{
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.links-rodape{
+	font-size: 24px;
+	font-weight: 800;
+	text-decoration: none;
+	color: #000;
+	display: flex;
+
+}
+
+.rodape{
+	background-color: #000;
+}
+
+.texto-rodape{
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 800;
+	text-align: center;
+	padding: 12px 0px;
 }
