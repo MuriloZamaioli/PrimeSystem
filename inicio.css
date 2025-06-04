@@ -107,6 +107,7 @@ section {
 body {
 	line-height: 1;
 	font-family: "JetBrains Mono";
+	background-color: rgb(164, 197, 248);
 }
 
 ol,
@@ -137,12 +138,20 @@ table {
 	font-weight: 500;
 }
 
+#divpai{
+	background-color: white;
+	width: 60%;
+	margin: auto;
+	border-radius: 20px;
+}
+
 .cabecalho {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-top: 8px;
-	margin-left: 75px;
+	width: 100%;
+	border-radius: 20px ;
+	background-color: #116DE2;
 }
 
 .logo {
@@ -155,45 +164,64 @@ table {
 	text-align: center;
 	justify-content: space-around;
 	align-items: center;
-	gap: 50px;
-	margin-right: 111px;
+	gap: 20px;
+	width: 100%;
 }
 
 .menu-cabecalho {
-	color: #2F89FC;
-	font-size: 32px;
+	color: white;
+	font-size: 22px;
 	font-weight: bold;
 	text-decoration: none;
-	margin-left: 50px;
+
 }
 
 .entrar {
 	padding: 8px 36px;
 	border-radius: 40px;
-	background-color: rgba(47, 137, 252, 0.4);
+	background-color: rgba(164, 204, 255, 0.4);
+}
+
+.menu-inicio{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	
 }
 
 .titulo1 {
-	font-size: 64px;
+	font-size: 48px;
 	color: #116DE2;
 	font-weight: 800;
 	text-align: center;
+	margin-top: 50px;
 }
 
-.menu-inicio {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+.borda {
+	border: 1px solid #bec9d1;
+    border-radius: 20px;
+	margin: 18px 23px 0px 23px;
+	padding-bottom: 30px;
+	box-shadow: 5px 7px 15px #116ce285;
 }
 
 .imagem-inicio {
-	height: 434px;
+	height: 270px;
+
+}
+
+.conjunto-nuvem{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .nuvem-inicio {
 	text-align: center;
 	position: relative;
-	width: 700px;
+	width: 430px;
 	height: auto;
 	align-items: center;
 	display: flex;
@@ -201,13 +229,12 @@ table {
 
 .nuvem1 {
 	width: 100%;
-	display: block;
 }
 
 .texto-nuvem-inicio {
-	font-size: 28px;
+	font-size: 18px;
 	font-weight: 400;
-	width: 520px;
+	width: 320px;
 	position: absolute;
 	top: 52%;
 	left: 48%;
@@ -219,35 +246,32 @@ table {
 	display: flex;
 	align-items: center;
 	text-align: center;
-	margin-left: 830px;
-	margin-top: 500px;
-	position: absolute;
-	
+	position: absolute;	
 }
 
 .nuvem-teste{
 	text-align: center;
 	position: relative;
-	width: 220px;
+	width: 130px;
 	height: auto;
 }
 
 .texto-teste {
-	font-size: 32px;
+	font-size: 18px;
 	font-weight: bold;
 	position: absolute;
 	text-align: center;
-	margin-left: 30px;
+	margin-left: 20px;
 	text-decoration: none;
 	color: #000;
 }
 
 .titulo2{
-	font-size: 64px;
+	font-size: 48px;
 	color: #116DE2;
 	font-weight: 800;
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 10px;
 }
 
 .menu-servicos {
@@ -258,17 +282,16 @@ table {
 }
 
 .nuvem-servicos{
-	
 	text-align: center;
 	position: relative;
-	width: 700px;
+	width: 332px;
 	height: auto;
 	align-items: center;
 	display: flex;
 }
 
 .nuvem2 {
-	width: 83%;
+	width: 100%;
 	height: auto;
 	display: block;
 }
@@ -276,18 +299,18 @@ table {
 .texto-nuvem-servicos {
     position: absolute;
     top: 50%;
-    left: 43%;
-    transform: translate(-50%, -50%);
+    left: 30%;
+    transform: translate(-22%, -50%);
     text-align: center;
-    font-size: 28px;
+    font-size: 18px;
 }
 
 .imagem-servico {
-	height: 434px;
+	height: 270px;
 }
 
 .titulo3 {
-	font-size: 64px;
+	font-size: 48px;
 	color: #116DE2;
 	font-weight: 800;
 	text-align: center;
@@ -361,7 +384,7 @@ table {
 }
 
 .titulo4 {
-	font-size: 64px;
+	font-size:48px;
 	color: #116DE2;
 	font-weight: 800;
 	text-align: center;
@@ -510,4 +533,8 @@ table {
 	font-weight: 800;
 	text-align: center;
 	padding: 12px 0px;
+}
+
+.imagem{
+	height: 270px;
 }
