@@ -140,7 +140,7 @@ table {
 
 #divpai{
 	background-color: white;
-	width: 60%;
+	width: 73%;
 	margin: auto;
 	border-radius: 20px;
 }
@@ -151,12 +151,13 @@ table {
 	justify-content: space-between;
 	width: 100%;
 	border-radius: 20px ;
-	background-color: #116DE2;
+	background: linear-gradient(to right, #116DE2 30%, #0F5EC3 53%, #0A3C7C 97%);
 }
 
 .logo {
-	height: 250px;
-	width: 250px;
+	height: 113px;
+	width: 113px;
+	margin-left: 50px;
 }
 
 .conjunto-menu {
@@ -164,7 +165,6 @@ table {
 	text-align: center;
 	justify-content: space-around;
 	align-items: center;
-	gap: 20px;
 	width: 100%;
 }
 
@@ -179,13 +179,8 @@ table {
 .entrar {
 	padding: 8px 36px;
 	border-radius: 40px;
-	background-color: rgba(164, 204, 255, 0.4);
-}
-
-.menu-inicio{
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
+	background-color: white;
+	color: #0A3C7C;
 	
 }
 
@@ -195,50 +190,49 @@ table {
 	font-weight: 800;
 	text-align: center;
 	margin-top: 50px;
+	margin-bottom: 30px;
 }
 
-.borda {
+/* .borda {
 	border: 1px solid #bec9d1;
     border-radius: 20px;
 	margin: 18px 23px 0px 23px;
 	padding-bottom: 30px;
 	box-shadow: 5px 7px 15px #116ce285;
-}
+} */
 
-.imagem-inicio {
-	height: 270px;
-
-}
-
-.conjunto-nuvem{
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.nuvem-inicio {
-	text-align: center;
-	position: relative;
-	width: 430px;
-	height: auto;
+.banner{
+	z-index: -1;
 	align-items: center;
+	justify-content: center;
 	display: flex;
 }
 
-.nuvem1 {
-	width: 100%;
+.img-banner{
+	
 }
 
-.texto-nuvem-inicio {
+.menu-inicio{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.caixa-inicio {
+	text-align: center;
+	width: 360px;
+	height: 150px;
+	align-items: center;
+	display: flex;
+	background-color: #2F89FC ;
+	border-radius: 12px;
+	margin-right: 50px;
+	position: absolute;
+}
+
+.texto-caixa-inicio {
 	font-size: 18px;
 	font-weight: 400;
-	width: 320px;
-	position: absolute;
-	top: 52%;
-	left: 48%;
-	transform: translate(-38%, -82%);
 	text-align: center;
 }
 
