@@ -9,144 +9,133 @@
 </head>
 
 <body>
-  <div id="divpai">
+  <!-- Cabeçalho -->
+  <header class="cabecalho">
+    <img src="imagens/logo.png" alt="Logo Prime System" class="logo" />
+    <nav class="conjunto-menu">
+      <a href="#" class="menu-cabecalho">Início</a>
+      <a href="#" class="menu-cabecalho">Serviços</a>
+      <a href="#" class="menu-cabecalho">Sobre</a>
+      <a href="#" class="menu-cabecalho">Contatos</a>
+      <a href="#" class="menu-cabecalho entrar">Entrar</a>
+    </nav>
+  </header>
 
-    <!-- Cabeçalho -->
-    <header class="cabecalho">
-      <img src="imagens/logo.png" alt="Logo Prime System" class="logo" />
-      <nav class="conjunto-menu">
-        <a href="#" class="menu-cabecalho">Início</a>
-        <a href="#" class="menu-cabecalho">Serviços</a>
-        <a href="#" class="menu-cabecalho">Sobre</a>
-        <a href="#" class="menu-cabecalho">Contatos</a>
-        <a href="#" class="menu-cabecalho entrar">Entrar</a>
-      </nav>
-    </header>
-
-    <!-- Seção Início -->
-    <main>
-      <section class="inicio">
-        <h1 class="titulo1">Início</h1>
-        <div class="banner">
-          <img src="imagens/banner.png" alt="Banner Principal" class="img-banner" />
-        </div>
-        <div class="menu-inicio">
-          <div class="caixa-inicio">
-            <p class="texto-caixa-inicio">
-              Simplifique a gestão da sua empresa com PrimeSystem. Controle, organização e resultados em um só lugar.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Seção Serviços -->
-      <section class="borda">
-        <h1 class="titulo2">Serviços</h1>
-        <div class="menu-servicos">
-          <div class="nuvem-servicos">
-            <img src="imagens/nuvem2.png" alt="Ícone de nuvem" class="nuvem2" />
-            <p class="texto-nuvem-servicos">
-              Tudo o que sua empresa precisa para crescer. Automatize tarefas, ganhe tempo e tome decisões com segurança.
-            </p>
-          </div>
-          <img src="imagens/serviços.png" alt="Imagem representando serviços" class="imagem-servico" />
-        </div>
-      </section>
-
-      <!-- Seção Sobre Nós -->
-      <section class="borda">
-        <h1 class="titulo3">Sobre Nós</h1>
-
-        <div class="menu-sobrenos1">
-          <img src="imagens/sobrenos1.png" alt="Equipe Prime System" class="imagem-sobrenos" />
-          <div class="nuvem-sobrenos1">
-            <img src="imagens/nuvem3.png" alt="Ícone de nuvem" class="nuvem3" />
-            <p class="texto-nuvem-sobrenos1">
-              Somos especialistas em soluções inteligentes para gestão de estoque. Nossa missão é transformar a forma como empresas controlam, organizam e otimizam seus inventários, oferecendo tecnologia de ponta.
-            </p>
-          </div>
-        </div>
-
-        <div class="menu-sobrenos2">
-          <div class="nuvem-sobrenos2">
-            <img src="imagens/nuvem4.png" alt="Ícone de nuvem" class="nuvem4" />
-            <p class="texto-nuvem-sobrenos2">
-              Nosso foco é reduzir perdas, aumentar a produtividade e proporcionar visibilidade total dos seus produtos em tempo real.
-            </p>
-          </div>
-          <img src="imagens/sobrenos2.png" alt="Controle de Estoque" class="imagem" />
-        </div>
-      </section>
-
-      <!-- Seção Contatos -->
-      <section class="borda">
-        <h1 class="titulo4">Contatos</h1>
-        <div class="menu-contato">
-          <div class="contato-imagem">
-            <img src="imagens/contatos.png" alt="Ilustração de contato" class="imagem" />
-          </div>
-
-          <form class="menu-cadastro">
-            <h3 class="texto-subtitulo">Deixe seus dados<br />para te chamarmos</h3>
-
-            <div class="campo-cadastro">
-              <label for="nome" class="titulo-cadastro">Nome</label>
-              <input type="text" id="nome" name="nome" class="texto-cadastro" required />
-            </div>
-
-            <div class="campo-cadastro">
-              <label for="email" class="titulo-cadastro">Email</label>
-              <input type="email" id="email" name="email" class="texto-cadastro" required />
-            </div>
-
-            <div class="campo-cadastro">
-              <label for="telefone" class="titulo-cadastro">Telefone</label>
-              <input type="tel" id="telefone" name="telefone" class="texto-cadastro" required />
-            </div>
-
-            <div class="campo-botao">
-              <button type="submit" class="botao-enviar">Enviar</button>
-            </div>
-          </form>
-        </div>
-
-        <h4 class="subtitulo-contato">Ou entre em contato conosco</h4>
-        <div class="campo-botoes">
-          <a class="botao-whats" href="#">Whatsapp</a>
-          <a class="botao-email" href="#">Email</a>
-        </div>
-      </section>
-    </main>
-
-    <!-- Rodapé -->
-    <div class="pre-rodape">
-      <img src="imagens/logoazul.png" alt="Logo Prime System azul" class="logo-rodape" />
-      <div class="menu-rodape">
-        <div class="campo-rodape">
-          <a class="links-rodape" href="#">Início</a>
-          <a class="links-rodape" href="#">Sistemas</a>
-          <a class="links-rodape" href="#">Downloads</a>
-        </div>
-        <div class="campo-rodape">
-          <a class="links-rodape" href="#">Sobre nós</a>
-          <a class="links-rodape" href="#">Empresa</a>
-          <a class="links-rodape" href="#">Blog</a>
-        </div>
-        <div class="campo-rodape">
-          <a class="links-rodape" href="#">Suporte</a>
-          <a class="links-rodape" href="#">FAQ</a>
-          <a class="links-rodape" href="#">Telefones</a>
+  <!-- Seção Início -->
+  <main>
+    <h1 class="titulo">Início</h1>
+    <div class="banner">
+      <img src="imagens/banner.png" alt="Banner Principal" class="img-banner" />
+      <div class="menu-inicio">
+        <div class="caixa-inicio">
+          <p class="texto">
+            Simplifique a gestão da sua empresa com PrimeSystem. Controle, organização e resultados em um só lugar.
+          </p>
         </div>
       </div>
     </div>
 
-    <footer class="rodape">
-      <p class="texto-rodape">
-        © 2025 - Felipe, Enzo, Gustavo, Luiz, Murilo - PRIME SYSTEM
-      </p>
-    </footer>
+    <!-- Seção Serviços -->
 
+    <h1 class="titulo">Serviços</h1>
+    <div class="menu">
+      <div class="caixa-servicos">
+        <p class="texto">
+          Tudo o que sua empresa precisa para crescer. Automatize tarefas, ganhe tempo e tome decisões com segurança.
+        </p>
+      </div>
+      <img src="imagens/serviços.png" alt="Imagem representando serviços" class="imagens" />
+    </div>
+    <div class="botao-teste">
+      <a href="#" class="texto-botao-teste">Teste Já</a>
+    </div>
+
+
+    <!-- Seção Sobre Nós -->
+
+    <h1 class="titulo">Sobre Nós</h1>
+    <div class="menu">
+      <img src="imagens/sobrenos1.png" class="imagens" />
+      <div class="caixa-sobrenos1">
+        <p class="texto">
+          Somos especialistas em soluções inteligentes para gestão de estoque. Nossa missão é transformar a forma
+          como empresas controlam, organizam e otimizam seus inventários, oferecendo tecnologia de ponta.
+        </p>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="caixa-sobrenos2">
+        <p class="texto">
+          Nosso foco é reduzir perdas, aumentar a produtividade e proporcionar visibilidade total dos seus produtos
+          em tempo real.
+        </p>
+      </div>
+      <img src="imagens/sobrenos2.png" class="imagens" />
+    </div>
+
+    <!-- Seção Contatos -->
+
+    <div class="campo-contato">
+      <h1 class="titulo-contato">Contatos</h1>
+      <h3 class="subtitulo">Deixe seus dados<br />para te chamarmos</h3>
+      <div class="menu-contato">
+
+        <img src="imagens/contatos.png" alt="Ilustração de contato" class="imagens" />
+
+        <form class="menu-cadastro">
+          <div class="campo-cadastro">
+            <label for="nome" class="titulo-cadastro">Nome</label>
+            <input type="text" id="nome" name="nome" class="texto-cadastro" required />
+
+            <label for="email" class="titulo-cadastro">Email</label>
+            <input type="email" id="email" name="email" class="texto-cadastro" required />
+
+            <label for="telefone" class="titulo-cadastro">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" class="texto-cadastro" required />
+          </div>
+
+          <div class="campo-botao">
+            <button type="submit" class="botao-enviar">Enviar</button>
+          </div>
+        </form>
+      </div>
+
+      <h4 class="texto-contato">Ou entre em contato conosco</h4>
+      <div class="campo-botoes">
+        <a class="botao-whats" href="#">Whatsapp</a>
+        <a class="botao-email" href="#">Email</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Rodapé -->
+  <div class="pre-rodape">
+    <img src="imagens/logoazul.png" alt="Logo Prime System azul" class="logo-rodape" />
+    <div class="menu-rodape">
+      <div class="campo-rodape">
+        <a class="links-rodape" href="#">Início</a>
+        <a class="links-rodape" href="#">Sistemas</a>
+        <a class="links-rodape" href="#">Downloads</a>
+      </div>
+      <div class="campo-rodape">
+        <a class="links-rodape" href="#">Sobre nós</a>
+        <a class="links-rodape" href="#">Empresa</a>
+        <a class="links-rodape" href="#">Blog</a>
+      </div>
+      <div class="campo-rodape">
+        <a class="links-rodape" href="#">Suporte</a>
+        <a class="links-rodape" href="#">FAQ</a>
+        <a class="links-rodape" href="#">Telefones</a>
+      </div>
+    </div>
   </div>
+
+  <footer class="rodape">
+    <p class="texto-rodape">
+      © 2025 - Felipe, Enzo, Gustavo, Luiz, Murilo - PRIME SYSTEM
+    </p>
+  </footer>
 </body>
 
 </html>
