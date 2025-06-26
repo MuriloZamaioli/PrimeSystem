@@ -138,6 +138,11 @@ table {
 	font-weight: 500;
 }
 
+html {
+	scroll-behavior: smooth;
+  }
+  
+
 /* .borda {
 	border: 1px solid #bec9d1;
 	border-radius: 20px;
@@ -308,6 +313,7 @@ table {
 	max-width: 1400px;
 	margin: 0 auto;
 	padding: 10px;
+	border-radius: 50px;
 }
 
 .titulo-contato {
@@ -418,26 +424,23 @@ table {
 	border: 4px #ffffff solid;
 }
 
+/* RODAPÉ */
+
+
 .pre-rodape{
 	display: flex;
 	justify-content: space-around;
 }
 
-.menu-rodape{
-	width: 700px;
-	text-align: center;
-	align-items: center;
-	display: flex;
-	justify-content: space-around;
-	gap: 70px;
-	
+.imagem{
+	height: 270px;
 }
 
-.campo-rodape{
+.menu-rodape{
 	display: flex;
-	flex-direction: column;
-	gap: 30px;
-	justify-content: space-between;
+	flex-direction:row;
+	gap: 133px;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -460,8 +463,4 @@ table {
 	font-weight: 800;
 	text-align: center;
 	padding: 12px 0px;
-}
-
-.imagem{
-	height: 270px;
 }
