@@ -8,22 +8,25 @@
   <link rel="stylesheet" href="inicio.css" />
 </head>
 
-<body>
+<body id="top">
+
   <!-- Cabeçalho -->
-  <header class="cabecalho">
+  <header class="cabecalho" id="cabecalho">
     <img src="imagens/logo.png" alt="Logo Prime System" class="logo" />
     <nav class="conjunto-menu">
-      <a href="#" class="menu-cabecalho">Início</a>
-      <a href="#" class="menu-cabecalho">Serviços</a>
-      <a href="#" class="menu-cabecalho">Sobre</a>
-      <a href="#" class="menu-cabecalho">Contatos</a>
+      <a href="#top" class="menu-cabecalho">Início</a>
+      <a href="#secao2" class="menu-cabecalho">Serviços</a>
+      <a href="#secao3" class="menu-cabecalho">Sobre</a>
+      <a href="#secao4" class="menu-cabecalho">Contatos</a>
       <a href="login.html" class="menu-cabecalho entrar">Entrar</a>
     </nav>
   </header>
 
-  <!-- Seção Início -->
+  <!-- Conteúdo principal -->
   <main>
-    <h1 class="titulo">Início</h1>
+
+    <!-- Seção Início -->
+    <h1 class="titulo" id="secao1">Início</h1>
     <div class="banner">
       <img src="imagens/banner.png" alt="Banner Principal" class="img-banner" />
       <div class="menu-inicio">
@@ -36,8 +39,7 @@
     </div>
 
     <!-- Seção Serviços -->
-
-    <h1 class="titulo">Serviços</h1>
+    <h1 class="titulo" id="secao2">Serviços</h1>
     <div class="menu">
       <div class="caixa-servicos">
         <p class="texto">
@@ -50,38 +52,31 @@
       <a href="#" class="texto-botao-teste">Teste Já</a>
     </div>
 
-
     <!-- Seção Sobre Nós -->
-
-    <h1 class="titulo">Sobre Nós</h1>
+    <h1 class="titulo" id="secao3">Sobre Nós</h1>
     <div class="menu">
       <img src="imagens/sobrenos1.png" class="imagens" />
       <div class="caixa-sobrenos1">
         <p class="texto">
-          Somos especialistas em soluções inteligentes para gestão de estoque. Nossa missão é transformar a forma
-          como empresas controlam, organizam e otimizam seus inventários, oferecendo tecnologia de ponta.
+          Somos especialistas em soluções inteligentes para gestão de estoque. Nossa missão é transformar a forma como empresas controlam, organizam e otimizam seus inventários, oferecendo tecnologia de ponta.
         </p>
       </div>
     </div>
     <div class="menu">
       <div class="caixa-sobrenos2">
         <p class="texto">
-          Nosso foco é reduzir perdas, aumentar a produtividade e proporcionar visibilidade total dos seus produtos
-          em tempo real.
+          Nosso foco é reduzir perdas, aumentar a produtividade e proporcionar visibilidade total dos seus produtos em tempo real.
         </p>
       </div>
       <img src="imagens/sobrenos2.png" class="imagens" />
     </div>
 
     <!-- Seção Contatos -->
-
-    <div class="campo-contato">
+    <div class="campo-contato" id="secao4">
       <h1 class="titulo-contato">Contatos</h1>
       <h3 class="subtitulo">Deixe seus dados<br />para te chamarmos</h3>
       <div class="menu-contato">
-
         <img src="imagens/contatos.png" alt="Ilustração de contato" class="imagens" />
-
         <form class="menu-cadastro">
           <div class="campo-cadastro">
             <label for="nome" class="titulo-cadastro">Nome</label>
@@ -110,7 +105,6 @@
   </main>
 
   <!-- Rodapé -->
-
   <div class="menu-rodape">
     <img src="imagens/logoazul.png" alt="Logo Prime System azul" class="logo-rodape" />
     <a class="links-rodape" href="#">Início</a>
@@ -123,6 +117,19 @@
       © 2025 - Felipe, Enzo, Gustavo, Luiz, Murilo - PRIME SYSTEM
     </p>
   </footer>
-</body>
 
+  <!-- Script para esconder o cabeçalho ao rolar -->
+  <script>
+    const header = document.getElementById('cabecalho');
+
+    window.addEventListener('scroll', () => {
+  if (window.scrollY < 105) {
+    header.classList.remove('oculto'); // mostra cabeçalho quando perto do topo (menos que 50px)
+  } else {
+    header.classList.add('oculto'); // esconde quando passar de 50px
+  }
+    });
+  </script>
+
+</body>
 </html>

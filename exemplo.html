@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="exemplo.css">
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="exemplo.css">
+<style>
+  /* Apenas para estilo da área-alvo */
+  #secao2 {
+    margin-top: 1000px; /* Força uma distância para simular rolagem */
+    height: 500px;
+    background-color: lightblue;
+  }
+</style>
+<title>Exemplo de âncora</title>
 </head>
-
 <body>
-<!-- Botão que ao ser clicado leva até a seção com id="destino" -->
-<button onclick="location.href='#destino'">Ir para o destino</button>
 
-<!-- Seção de destino -->
-<div id="destino" style="margin-top: 1000px;">
-  <h2>Você chegou aqui!</h2>
+<a href="#secao2">Clique aqui para ir para a seção 2</a>
+
+<div id="secao2">
+  <h2>Seção 2</h2>
+  <p>Você rolou até aqui!</p>
 </div>
 
 </body>
-
 </html>
