@@ -210,6 +210,7 @@ table {
 }
 
 .botao-entrar:hover {
+	transition: 0.1s ease;
 	transform: scale(1.05);
 	box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
 	color: #fff;
@@ -221,9 +222,15 @@ table {
 	margin-top: 15px;
 	text-decoration: none;
 	color: #ffffff;
-	padding-bottom: 105px;
+	margin-bottom: 100px;
+	padding: 5px;
 
 }
+
+.esqueci-senha:hover{
+	text-decoration: underline;
+}
+
 .fundo-cadastrar{
 	background-color: #ffffff;
 	border-top-right-radius: 40px;
@@ -297,6 +304,7 @@ table {
 }
 
 .botao-cadastrar:hover {
+	transition: 0.1s ease;
 	transform: scale(1.05);
 	box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
 	color: #fff;
