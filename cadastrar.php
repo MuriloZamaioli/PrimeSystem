@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,10 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prime System</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="cadastrar.css">
 </head>
 
 <body>
+    <?php
+        include "conexao/conexao.php";
+    ?>
     <div class="tela-login">
         <div class="fundo-login">
             <div class="fundo-entrar">
@@ -28,26 +32,30 @@
                 <div class="menu-cadastrar">
                     <h1 class="titulo-cadastrar">Crie sua conta</h1>
                     <h2 class="subtitulo-cadastrar">Preencha seus dados</h2>
-                    <form action="/login" method="POST" class="form-cadastro">
+                    <form  method="POST" class="form-cadastro" action="conexao/ClienteSalvar.php">
                         <div class="campo-cadastro">
                             <img src="imagens/icone-nome.png" alt="Usuario" class="icone-cadastro">
-                            <input type="text" id="usuario" name="usuario" placeholder="Nome" class="texto-cadastro" required>
+                            <input type="text" id="usuario" name="usuario" placeholder="Nome" class="texto-cadastro" required maxlenght="80">
                         </div>
                         <div class="campo-cadastro">
                             <img src="imagens/icone-email.png" alt="Email" class="icone-cadastro">
-                            <input type="email" id="email" name="email" placeholder="Email" class="texto-cadastro" required>
+                            <input type="email" id="email" name="email" placeholder="Email" class="texto-cadastro" required maxlenght="80">
                         </div>
                         <div class="campo-cadastro">
                             <img src="imagens/icone-senha.png" alt="Senha" class="icone-cadastro">
-                            <input type="password" id="senha" name="senha" placeholder="Senha" class="texto-cadastro" required>
+                            <input type="password" id="senha" name="senha" placeholder="Senha" class="texto-cadastro" required maxlenght="32">
                         </div>
-                    </form>
-                    <button type="submit" class="botao-cadastrar">
-                        <a class="link-botao-entrar" href="#">CADASTRAR</a>
+                        <a class="link-botao-entrar">
+                        <button type="submit" class="botao-cadastrar">
+                        CADASTRAR
                     </button>
+                    </a>
+                    </form>
+                    
                 </div>
             </div>
         </div>
     </div>
+    
 </body>
 </html>

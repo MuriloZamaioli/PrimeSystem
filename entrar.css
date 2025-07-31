@@ -221,7 +221,7 @@ table {
 .esqueci-senha {
 	margin-top: 15px;
 	text-decoration: none;
-	color: #ffffff;
+	color: #2F89FC;
 	margin-bottom: 100px;
 	padding: 5px;
 
@@ -252,7 +252,6 @@ table {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-align: center;
-
 }
 
 .subtitulo-cadastrar {

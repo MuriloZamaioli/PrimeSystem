@@ -17,25 +17,18 @@
                     <div class="descricao-entrar">
                         <h1 class="titulo-entrar">Bem-Vindo(a)</h1>
                         <h1 class="subtitulo-entrar">Acesse sua conta <br> agora mesmo.</h1>
-                        <a class="link-botao-entrar botao-entrar" href="inicio.html">
-                            <button type="button" class="botao-entrar">
-                                ENTRAR
-                            </button>
+                        <a class="link-botao-entrar" href="inicio.html">
+                            
                         </a>
-                        <a href="#" class="esqueci-senha">Esqueci minha senha</a>
+                        
                     </div>
                 </div>
             </div>
             <div class="fundo-cadastrar">
                 <div class="menu-cadastrar">
-                    <h1 class="titulo-cadastrar">Crie sua conta</h1>
+                    <h1 class="titulo-cadastrar">Entre na sua conta</h1>
                     <h2 class="subtitulo-cadastrar">Preencha seus dados</h2>
                     <form action="/login" method="POST" class="form-cadastro">
-                        <div class="campo-cadastro">
-                            <img src="imagens/icone-nome.png" alt="Usuario" class="icone-cadastro">
-                            <input type="text" id="usuario" name="usuario" placeholder="Nome" class="texto-cadastro"
-                                required>
-                        </div>
                         <div class="campo-cadastro">
                             <img src="imagens/icone-email.png" alt="Email" class="icone-cadastro">
                             <input type="email" id="email" name="email" placeholder="Email" class="texto-cadastro"
@@ -50,6 +43,7 @@
                     <button type="submit" class="botao-cadastrar">
                         <a class="link-botao-entrar" href="#">CADASTRAR</a>
                     </button>
+                    <a href="#" class="esqueci-senha">Esqueci minha senha</a>
                 </div>
             </div>
         </div>
