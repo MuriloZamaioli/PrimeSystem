@@ -246,6 +246,7 @@ table {
  
 .titulo-cadastrar {
     margin-top: 86px;
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 36px;
     color: #2F89FC;
@@ -361,4 +362,12 @@ select:focus {
   outline: none;
   border-color: #1c5edc;
   box-shadow: 0 0 8px rgba(28, 94, 220, 0.5);
+}
+.titulo-redefine {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2F89FC;
+    max-width: 500px;
+    word-break: break-word; 
+    
 }

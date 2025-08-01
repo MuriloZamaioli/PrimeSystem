@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 31/07/2025 às 02:41
+-- Tempo de geração: 02/08/2025 às 00:56
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -33,15 +33,17 @@ CREATE TABLE `login` (
   `id` int(11) NOT NULL,
   `nome` varchar(80) NOT NULL,
   `email` varchar(80) NOT NULL,
-  `senha` varchar(32) NOT NULL
+  `senha` varchar(32) NOT NULL,
+  `token` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `login`
 --
 
-INSERT INTO `login` (`id`, `nome`, `email`, `senha`) VALUES
-(2, 'jghjgh', 'hfgh@fsdfs.com', '08c6a51dde006e64aed953b94fd68f0c');
+INSERT INTO `login` (`id`, `nome`, `email`, `senha`, `token`) VALUES
+(9, 'teste', 'teste@email.com', '698dc19d489c4e4db73e28a713eab07b', 'estrela'),
+(10, 'Enso', 'enso@enso.com', '7bdb694e3d1fb9bf9d98172cb18ccc1f', 'estrela');
 
 --
 -- Índices para tabelas despejadas
@@ -61,7 +63,7 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT de tabela `login`
 --
 ALTER TABLE `login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

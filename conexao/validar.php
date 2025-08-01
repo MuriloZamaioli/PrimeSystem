@@ -1,22 +1,28 @@
 <?php
-include "conexao.php";
+session_start();
+include 'conexao.php';
 
-$email = $_POST['email'];
 $usuario = $_POST['usuario'];
+$email = $_POST['email'];
 $token = $_POST['token'];
 
-$stmt = $conexao->prepare("SELECT * FROM login WHERE nome = ? AND email = ? AND token = ?");
-$stmt->bind_param("sss", $usuario, $email, $token);
-$stmt->execute();
-$resultado = $stmt->get_result();
+$sql = "SELECT * FROM login WHERE nome = ? AND email = ? AND token = ?";
+$stmt = mysqli_prepare($conexao, $sql);
 
-if ($resultado->num_rows > 0) {
-    header("Location: ../redefineSenha.php");
-    exit;
+if ($stmt) {
+    mysqli_stmt_bind_param($stmt, "sss", $usuario, $email, $token);
+    mysqli_stmt_execute($stmt);
+    $resultado = mysqli_stmt_get_result($stmt);
+
+    if (mysqli_num_rows($resultado) === 1) {
+        $_SESSION['email'] = $email;
+        header("Location: ../redefineSenha.php");
+        exit();
+    } else {
+        echo "<script>alert('Dados inválidos!'); window.history.back();</script>";
+    }
+    mysqli_stmt_close($stmt);
 } else {
-    echo "<script>alert('Senha ou usuário incorreto.');</script>";
+    echo "Erro na consulta.";
 }
-
-$stmt->close();
-$conexao->close();
-?>
+mysqli_close($conexao);
