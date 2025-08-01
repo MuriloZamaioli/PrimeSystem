@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	font-family: "JetBrains Mono";
+	background-color: #DBE7F6;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+::placeholder{
+	font-family: "JetBrains Mono";
+	font-weight: 500;
+}
+
+
+.tela-login {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+
+}
+
+.fundo-login {
+	display: flex;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px
+}
+
+.fundo-entrar {
+	background: #2F89FC;
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px
+}
+
+.menu-entrar {
+	width: 500px;
+	align-items: center;
+
+}
+
+.logo {
+
+	margin-left: 100px;
+
+}
+
+.descricao-entrar {
+	color: #ffffff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.titulo-entrar {
+	font-size: 30px;
+	font-weight: bold;
+
+
+}
+
+.subtitulo-entrar {
+	font-size: 21px;
+	font-weight: 700;
+	margin-top: 48px;
+	
+}
+
+.botao-cadastrar {
+	margin-top: 35px;
+	border-radius: 50px;
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 20px;
+	border: 4px solid #FFFFFF;
+	width: 270PX;
+	height: 60PX;
+	background-color: transparent;
+	align-items: center;
+
+}
+
+.botao-cadastrar:hover {
+	transition: 0.1s ease;
+	transform: scale(1.05);
+
+	color: #fff;
+	border-color: #fff;
+	cursor: pointer;
+}
+
+.esqueci-senha {
+	margin-top: 15px;
+	text-decoration: none;
+	color: #2F89FC;
+	margin-bottom: 100px;
+	padding: 5px;
+
+}
+
+.esqueci-senha:hover{
+	text-decoration: underline;
+}
+
+.fundo-cadastrar{
+	background-color: #ffffff;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px
+}
+.menu-cadastrar {
+	width: 700px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.titulo-cadastrar {
+	margin-top: 86px;
+	font-weight: 700;
+	font-size: 36px;
+	background: #2F89FC;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: center;
+}
+
+.subtitulo-cadastrar {
+	margin-top: 15px;
+	text-align: center;
+	color: #AEAEAE;
+	font-size: 15px;
+	font-weight: 700;
+	padding-bottom: 45px;
+}
+
+.campo-cadastro {
+	background-color: #F1F1F1;
+	margin-bottom: 30px;
+	height: 70px;
+	width: 450px;
+	align-items: center;
+	display: flex;
+	text-align: center;
+	padding: 0 15px;
+}
+
+.texto-cadastro {
+	margin-left: 18px;
+	background-color: transparent;
+	border: 0;
+	font-size: 20px;
+	outline: none;
+}
+
+.form-cadastro {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.botao-entrar {
+	margin-top: 22px;
+	border-radius: 50px;
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 20px;
+	border: 0;
+	width: 270PX;
+	height: 60PX;
+	background: #2F89FC;
+
+}
+
+.botao-entrar:hover {
+	transition: 0.1s ease;
+	transform: scale(1.05);
+	box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+	color: #fff;
+	border-color: #fff;
+	cursor: pointer;
+}
+.link-botao-entrar{
+	text-decoration: none;
+	color: #FFFFFF;
+}

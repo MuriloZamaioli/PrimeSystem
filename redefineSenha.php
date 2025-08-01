@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prime System</title>
-    <link rel="stylesheet" href="esqueciSenha.css">
+    <link rel="stylesheet" href="redefineSenha.css">
 </head>
 
 <body>
@@ -36,8 +36,7 @@
                             <img src="imagens/icone-senha.png" alt="Senha" class="icone-cadastro">
                             <input type="password" id="senha" name="confirmaSenha" placeholder="Confirme a senha" class="texto-cadastro" required maxlenght="32">
                         </div>
-                        <div class="campo-simbolo">
-                        </div>
+
                         <button type="submit" class="botao-cadastrar">
                             <a class="link-botao-entrar">REDEFINIR</a>
                         </button>
