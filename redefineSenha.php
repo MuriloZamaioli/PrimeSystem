@@ -12,7 +12,7 @@ $email = $_SESSION['email'];
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Prime System</title>
-    <link rel="stylesheet" href="redefineSenha.css" />
+    <link rel="stylesheet" href="css/redefineSenha.css" />
 </head>
 <body>
     <div class="tela-login">

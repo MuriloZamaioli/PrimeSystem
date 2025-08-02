@@ -1,7 +1,7 @@
 <?php
 
 $servidor = "localhost";
-$bd = "bd_primesystem_site";
+$bd = "bd_primesystem";
 $usuario = "root";
 $senha = "";
 
