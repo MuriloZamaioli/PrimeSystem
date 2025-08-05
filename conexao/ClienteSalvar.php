@@ -13,6 +13,6 @@ $resultado = mysqli_query($conexao,$sql);
  
 mysqli_close($conexao);
  
-header('location:../inicio.html')
+header('location:../inicio.php')
  
 ?>

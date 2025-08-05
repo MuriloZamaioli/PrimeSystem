@@ -43,7 +43,7 @@
                             <input type="password" id="senha" name="senha" placeholder="Senha" class="texto-cadastro" required maxlenght="32">
                         </div>
                         <div class="campo-simbolo">
-                            <label for="simbolo">Escolha um símbolo:</label>
+                            <label for="simbolo">Escolha um símbolo para caso você precise recuperar sua senha:</label>
                             <select id="simbolo" name="token">
                                 <option value="estrela">★ Estrela</option>
                                 <option value="circulo">● Círculo</option>
