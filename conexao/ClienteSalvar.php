@@ -3,9 +3,9 @@ $nome = $_POST['usuario'];
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 $token = $_POST['token'];
-$hash = md5($senha);
+
  
-$sql = "insert into login(nome,email,senha,token) values ('$nome', '$email', '$hash', '$token')";
+$sql = "insert into login(nome,email,senha,token) values ('$nome', '$email', '$senha', '$token')";
  
 include 'conexao.php';
  

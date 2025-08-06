@@ -21,7 +21,7 @@
           <a href="#secao3" class="menu-cabecalho">Sobre</a>
           <a href="#secao4" class="menu-cabecalho">Contatos</a>
         </nav>
-        <a href="cadastrar.php" class="menu-cabecalho entrar">Acesso</a>
+        <a href="cadastrar.php" class="menu-cabecalho entrar">Criar Estoque</a>
         <a href="#" class="menu-cabecalho download">Download</a>
       </div>
     </header>

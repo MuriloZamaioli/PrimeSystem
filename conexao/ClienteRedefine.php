@@ -12,13 +12,13 @@ if ($senha !== $confirmaSenha) {
     echo "<script>alert('As senhas não coincidem.'); window.history.back();</script>";
     exit();
 }
-$senhaHash = password_hash($senha, PASSWORD_DEFAULT);
+
 $sql = "UPDATE `login` SET `senha` = ? WHERE email = ?";
 $stmt = mysqli_prepare($conexao, $sql);
 if (!$stmt) {
     die("Erro na preparação da consulta: " . mysqli_error($conexao));
 }
-mysqli_stmt_bind_param($stmt, "ss", $senhaHash, $email);
+mysqli_stmt_bind_param($stmt, "ss", $senha, $email);
 if (mysqli_stmt_execute($stmt)) {
     session_destroy();
     header("Location: ../inicio.html");
