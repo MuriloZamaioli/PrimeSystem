@@ -21,7 +21,7 @@ if (!$stmt) {
 mysqli_stmt_bind_param($stmt, "ss", $senha, $email);
 if (mysqli_stmt_execute($stmt)) {
     session_destroy();
-    header("Location: ../inicio.html");
+    header("Location: ../inicio.php");
     exit();
 } else {
     echo "Erro ao atualizar a senha: " . mysqli_error($conexao);

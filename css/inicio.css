@@ -283,7 +283,7 @@ html {
   width: 90%;
   margin: 0 auto;
   border-radius: 50px;
-  padding: 10px 0px;
+  padding: 10px 0px 40px 0px;
   border: 4px #6C5DD3 solid;
   margin-top: 50px;
   
@@ -362,47 +362,76 @@ html {
   color: #5058A0;
 }
 
-/* Botões WhatsApp e Email */
-.campo-botoes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 300px;
-  margin: 50px 0 100px;
-  text-align: center;
-}
+/* Botões WhatsApp*/
 
-.botao-whats,
-.botao-email {
-  padding: 13px 42px;
-  border-radius: 40px;
-  font-size: 22px;
-  font-weight: 800;
-  color: #fff;
-  border: 4px solid #a38add;
-  text-decoration: none;
-  width: 175px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
+  .whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
 
-.botao-whats {
-  background-color: #25D366;
-}
+  .whatsapp-float {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
 
-.botao-whats:hover {
-  background-color: #1ebe57;
-  transform: scale(1.05);
-}
+  .whatsapp-float img {
+    width: 32px;
+    height: 32px;
+  }
 
-.botao-email {
-  background-color: #6C5DD3;
-}
+  /* Tooltip ajustada */
+  .whatsapp-tooltip {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    transform: translateX(-80%);
+    background-color: #fff;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    max-width: 200px;
+  }
 
-.botao-email:hover {
-  background-color: #5a4bb8;
-  transform: scale(1.05);
-}
+  .whatsapp-float:hover .whatsapp-tooltip {
+    opacity: 1;
+  }
 
+  /* Responsivo */
+  @media (max-width: 500px) {
+    .whatsapp-float {
+      width: 50px;
+      height: 50px;
+    }
+
+    .whatsapp-float img {
+      width: 28px;
+      height: 28px;
+    }
+
+    .whatsapp-tooltip {
+      font-size: 13px;
+      padding: 6px 10px;
+      bottom: 60px;
+      transform: translateX(-70%);
+    }
+  }
 /* Rodapé */
 
 .rodape {

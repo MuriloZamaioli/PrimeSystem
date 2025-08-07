@@ -6,6 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prime System</title>
   <link rel="stylesheet" href="css/inicio.css" />
+  <style>
+    /* Estilo do modal */
+    .modal {
+      display: none;
+      /* Escondido por padrão */
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      width: 50%;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #aaa;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #000;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
 <body id="top">
@@ -106,15 +150,16 @@
             </div>
           </form>
         </div>
-
-        <h4 class="texto-contato">Ou entre em contato conosco</h4>
-        <div class="campo-botoes">
-          <a class="botao-whats" href="#">Whatsapp</a>
-          <a class="botao-email" href="#">Email</a>
-        </div>
       </div>
 
     </main>
+  </div>
+  <div class="whatsapp-container">
+    <a href="https://wa.me/551999999999?text=Olá%2C%20gostaria%20de%20mais%20informações"
+      class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+      <span class="whatsapp-tooltip">Entre em contato com a gente</span>
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+    </a>
   </div>
   <!-- Rodapé -->
   <footer class="rodape">
@@ -135,7 +180,6 @@
       }
     });
   </script>
-
 </body>
 
 </html>
