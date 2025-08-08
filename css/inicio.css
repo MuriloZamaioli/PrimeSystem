@@ -394,7 +394,6 @@ html {
     position: absolute;
     bottom: 70px;
     right: 0;
-    transform: translateX(-80%);
     background-color: #fff;
     color: #333;
     padding: 8px 12px;

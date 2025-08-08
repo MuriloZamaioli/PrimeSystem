@@ -1,55 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prime System</title>
   <link rel="stylesheet" href="css/inicio.css" />
-  <style>
-    /* Estilo do modal */
-    .modal {
-      display: none;
-      /* Escondido por padrão */
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
-    }
-
-    .modal-content {
-      background-color: #fff;
-      margin: 15% auto;
-      padding: 20px;
-      width: 50%;
-      border-radius: 8px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-      position: relative;
-    }
-
-    .close {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      font-size: 24px;
-      font-weight: bold;
-      color: #aaa;
-      cursor: pointer;
-    }
-
-    .close:hover {
-      color: #000;
-    }
-
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      margin-top: 20px;
-    }
-  </style>
 </head>
 
 <body id="top">
